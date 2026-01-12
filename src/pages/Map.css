@@ -1,0 +1,114 @@
+.map-page {
+  padding: 2rem;
+  flex: 1;
+  background-color: #f5f5f5;
+}
+
+.map-page h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.map-page > p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.map-container {
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.locations-list h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.location-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.location-card h3 {
+  color: #1f5156;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.location-card p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.coordinates {
+  background-color: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #495057;
+  border-left: 4px solid #1f5156;
+}
+
+.popup-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1f5156;
+}
+
+.popup-content p {
+  margin: 0 0 0.5rem 0;
+  color: #666;
+}
+
+.popup-content small {
+  color: #888;
+  font-style: italic;
+}
+
+/* Leaflet control adjustments */
+.leaflet-control-layers {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-popup-content {
+  margin: 12px 16px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .map-page {
+    padding: 1rem;
+  }
+  
+  .map-container {
+    margin-bottom: 2rem;
+  }
+  
+  .locations-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
